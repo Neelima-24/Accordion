@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.accordian_body {
+  max-width: 600px;
+  margin: 0em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8em 0em;
+}
+
+.faq {
+  width: 50%;
+  background-color: #4caf50;
+  border-radius: 8px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+  padding: 0.7em 1.4em;
+  cursor: pointer;
+}
+
+.faq .faq_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0em;
+  padding: 0em;
+}
+
+.answer p {
+  font-size: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1em 0em 0em;
+  padding: 5em;
+  padding-top: 1rem;
+}
+
+.faq .show_btn {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  margin: 0em;
+  border-radius: 120px;
+  cursor: pointer;
+}
+
+.answer {
+  max-height: 0px;
+  overflow: hidden;
+  line-height: 1.6;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
